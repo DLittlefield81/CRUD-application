@@ -1,6 +1,6 @@
+import  ReactApexChart  from "react-apexcharts";
 import { Typography, Box, Stack, fontWeight } from "@pankod/refine-mui";
 import { PieChartProps } from "interfaces/home";
-import  ReactApexChart  from "react-apexcharts";
 
 const PieChart = ({ title, value, series, colors }: PieChartProps) => {
 	return (
