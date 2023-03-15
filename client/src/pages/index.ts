@@ -1,5 +1,5 @@
 import { Login } from './login';
-import Home from './home';
+import Dashboard from './dashboard';
 import Agents from './agent';
 import MyProfile from './my-profile';
 import PropertyDetails from './property-details';
@@ -10,7 +10,7 @@ import EditProperty from './edit-property';
 
 export {
     Login,
-    Home,
+    Dashboard,
     Agents,
     MyProfile,
     PropertyDetails,

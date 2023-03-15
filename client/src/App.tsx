@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Refine, GitHubBanner, AuthProvider } from "@pankod/refine-core";
+import { Refine, AuthProvider } from "@pankod/refine-core";
 import {
 	notificationProvider,
 	RefineSnackbarProvider,
@@ -29,7 +29,7 @@ import { parseJwt } from "utils/parse-jwt";
 
 import {
 	Login,
-	Home,
+	Dashboard,
 	Agents,
 	MyProfile,
 	PropertyDetails,
@@ -107,7 +107,7 @@ function App() {
 
 	return (
 		<>
-			<GitHubBanner />
+			
 			<ColorModeContextProvider>
 				<CssBaseline />
 				<GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
@@ -118,7 +118,7 @@ function App() {
 						ReadyPage={ReadyPage}
 						catchAll={<ErrorComponent />}
 						//Change Menu Options Below
-						DashboardPage={Home} // enable Dashboard | Comment out to disable
+						DashboardPage={Dashboard} // enable Dashboard | Comment out to disable
 						resources={[
                         {
                             name: "properties",
@@ -136,12 +136,12 @@ function App() {
                         },
                         {
                             name: "reviews",
-                            list: Home,
+                            list: Dashboard,
                             icon: <StarOutlineRounded />,
                         },
                         {
                             name: "messages",
-                            list: Home,
+                            list: Dashboard,
                             icon: <ChatBubbleOutline />,
                         },
                         {
