@@ -1,6 +1,5 @@
-import React from "react";
-import { useList } from "@pankod/refine-core";
-import { Typography, Box, Stack } from "@pankod/refine-mui";
+import { useList } from "@refinedev/core";
+import { Typography, Box, Stack } from "@mui/material";
 
 import {
 	PieChart,
@@ -41,14 +40,13 @@ const Home = () => {
 					series={[75, 25]}
 					colors={["#275be8", "#c4e8ef"]}
 				/>
-				<PieChart
-					title="Revenue"
-					value={355}
-					series={[75, 25]}
-					colors={["#275be8", "#c4e8ef"]}
-				/>
 			</Box>
-			<Stack mt="25px" width='100%' direction={{ xs: "column", lg: "row" }} gap={4}>
+			<Stack
+				mt="25px"
+				width='100%'
+				direction={{ xs: "column", lg: "row" }}
+				gap={4}
+			>
 				<TotalRevenue />
 				<PropertyReferrals />
 			</Stack>

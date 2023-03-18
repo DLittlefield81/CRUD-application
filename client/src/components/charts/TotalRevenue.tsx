@@ -1,6 +1,7 @@
 import ReactApexChart from "react-apexcharts";
-import { Typography, Box, Stack, fontWeight } from "@pankod/refine-mui";
+import { Box, Typography, Stack } from "@mui/material";
 import { ArrowCircleUpRounded } from "@mui/icons-material";
+
 import { TotalRevenueOptions, TotalRevenueSeries } from "./chart.config";
 
 const TotalRevenue = () => {
@@ -33,12 +34,12 @@ const TotalRevenue = () => {
 					</Typography>
 				</Stack>
 			</Stack>
-      <ReactApexChart 
-      series={TotalRevenueSeries}
-      type='bar'
-      height={310}
-      options={TotalRevenueOptions}
-      />
+			<ReactApexChart
+				series={TotalRevenueSeries}
+				type='bar'
+				height={310}
+				options={TotalRevenueOptions}
+			/>
 		</Box>
 	);
 };
