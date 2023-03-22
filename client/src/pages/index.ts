@@ -1,21 +1,21 @@
 import { Login } from './login';
 import Dashboard from './dashboard';
-import Agents from './agent';
+import Venues from './venues';
 import MyProfile from './my-profile';
-import PropertyDetails from './property-details';
-import AllProperties from './all-properties';
-import CreateProperty from './create-property';
-import AgentProfile from './agent-profile';
-import EditProperty from './edit-property';
+import EventDetails from './event-details';
+import AllEvents from './all-events';
+import CreateEvent from './create-event';
+import VenueDetails from './venue-details';
+import EditEvent from './edit-event';
 
 export {
     Login,
     Dashboard,
-    Agents,
+    Venues,
     MyProfile,
-    PropertyDetails,
-    AllProperties,
-    CreateProperty,
-    AgentProfile,
-    EditProperty,
+    EventDetails,
+    AllEvents,
+    CreateEvent,
+    VenueDetails,
+    EditEvent,
 };

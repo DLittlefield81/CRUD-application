@@ -1,5 +1,5 @@
 /* eslint-disable no-plusplus */
-import { FormValues } from 'interfaces/property';
+import { FormValues } from 'interfaces/event';
 
 export const validateForm = (formValues: FormValues) => {
   const errors: { message: string } = { message: '' };
@@ -21,9 +21,9 @@ export const validateForm = (formValues: FormValues) => {
         }
         break;
 
-      case 'propertyType':
-        if (!formValues.propertyType) {
-          errors.message = 'Property type is required';
+      case 'eventType':
+        if (!formValues.eventType) {
+          errors.message = 'Event type is required';
           hasError = true;
         }
         break;

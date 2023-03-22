@@ -1,26 +1,26 @@
 // common
 import Profile from './common/Profile';
-import PropertyCard from './common/PropertyCard';
+import EventCard from './common/EventCard';
 import CustomButton from './common/CustomButton';
 
 // charts
 import PieChart from './charts/PieChart';
-import PropertyReferrals from './charts/PropertyReferrals';
+import EventReferrals from './charts/EventReferrals';
 import TotalRevenue from './charts/TotalRevenue';
 
-// agent
-import AgentCard from './agent/AgentCard';
+// venue
+import VenueCard from './venue/VenueCard';
 
 // home
 import TopAgent from './home/TopAgent';
 
 export {
   Profile,
-  PropertyCard,
+  EventCard,
   CustomButton,
   PieChart,
-  PropertyReferrals,
+  EventReferrals,
   TotalRevenue,
-  AgentCard,
+  VenueCard,
   TopAgent,
 };

@@ -10,9 +10,9 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useMemo } from "react";
-import { PropertyCard, CustomButton } from "components";
+import { EventCard, CustomButton } from "components";
 
-const AllProperties = () => {
+const AllEvents = () => {
 	const Navigate = useNavigate();
 	return (
 		<Box>
@@ -22,8 +22,8 @@ const AllProperties = () => {
 				</Typography>
 
 				<CustomButton
-					title="Add Property"
-					handleClick={() => Navigate("/properties/create")}
+					title="Add Event"
+					handleClick={() => Navigate("/events/create")}
 					backgroundColor="#475be8"
 					color="#fcfcfc"
 					icon={<Add />}
@@ -33,4 +33,4 @@ const AllProperties = () => {
 	);
 };
 
-export default AllProperties;
+export default AllEvents;

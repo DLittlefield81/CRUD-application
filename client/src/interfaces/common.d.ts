@@ -17,7 +17,7 @@ export interface ProfileProps {
     properties: Array | undefined
 }
 
-export interface PropertyProps {
+export interface EventProps {
     _id: string,
     title: string,
     description: string,
@@ -35,5 +35,5 @@ export interface FormProps {
     handleSubmit: FormEventHandler<HTMLFormElement> | undefined,
     handleImageChange: (file) => void,
     onFinishHandler: (data: FieldValues) => Promise<void> | void,
-    propertyImage: { name: string, url: string },
+    eventImage: { name: string, url: string },
 }

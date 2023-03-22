@@ -1,4 +1,4 @@
-export const propertyReferralsInfo = [
+export const eventReferralsInfo = [
   {
     title: 'Social Media',
     percentage: 64,

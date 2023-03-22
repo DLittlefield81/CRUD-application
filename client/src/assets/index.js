@@ -1,8 +1,8 @@
 
-import lgLogo from './logo.svg';
-import smLogo from './yariga.svg';
+import lgLogo from './tashan-logo-pink-gold.png';
+import smLogo from './tashan-logo-pink-gold.png';
 
-const logoAltText = "Branding: change /assets/index";
+const logoAltText = "Tashan Events | 2SLGBTQAI+ Bollywood Events in Toronto";
 
 
 

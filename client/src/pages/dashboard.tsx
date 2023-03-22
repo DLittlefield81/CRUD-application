@@ -3,9 +3,9 @@ import { Typography, Box, Stack } from "@mui/material";
 
 import {
 	PieChart,
-	PropertyReferrals,
+	EventReferrals,
 	TotalRevenue,
-	PropertyCard,
+	EventCard,
 	TopAgent,
 } from "components";
 
@@ -48,7 +48,7 @@ const Home = () => {
 				gap={4}
 			>
 				<TotalRevenue />
-				<PropertyReferrals />
+				<EventReferrals />
 			</Stack>
 		</Box>
 	);

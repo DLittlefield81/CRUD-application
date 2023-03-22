@@ -1,9 +1,6 @@
 import React from "react";
 
-import {
-	Refine,
-	LegacyAuthProvider as AuthProvider,
-} from "@refinedev/core";
+import { Refine, LegacyAuthProvider as AuthProvider } from "@refinedev/core";
 import {
 	notificationProvider,
 	RefineSnackbarProvider,
@@ -30,13 +27,13 @@ import { parseJwt } from "utils/parse-jwt";
 import {
 	Login,
 	Dashboard,
-	Agents,
+	Venues,
 	MyProfile,
-	PropertyDetails,
-	AllProperties,
-	CreateProperty,
-	AgentProfile,
-	EditProperty,
+	EventDetails,
+	AllEvents,
+	CreateEvent,
+	VenueDetails,
+	EditEvent,
 } from "pages";
 
 const axiosInstance = axios.create();
@@ -123,7 +120,6 @@ function App() {
 
 	return (
 		<ColorModeContextProvider>
-			
 			<CssBaseline />
 			<GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
 			<RefineSnackbarProvider>
@@ -136,17 +132,17 @@ function App() {
 					DashboardPage={Dashboard} // enable Dashboard | Comment out to disable
 					resources={[
 						{
-							name: "properties",
-							list: AllProperties,
-							show: PropertyDetails,
-							create: CreateProperty,
-							edit: EditProperty,
+							name: "events",
+							list: AllEvents,
+							show: EventDetails,
+							create: CreateEvent,
+							edit: EditEvent,
 							icon: <VillaOutlined />,
 						},
 						{
-							name: "agents",
-							list: Agents,
-							show: AgentProfile,
+							name: "venues",
+							list: Venues,
+							show: VenueDetails,
 							icon: <PeopleAltOutlined />,
 						},
 						{
@@ -173,7 +169,6 @@ function App() {
 					legacyRouterProvider={routerProvider}
 					legacyAuthProvider={authProvider}
 					LoginPage={Login}
-					
 				/>
 			</RefineSnackbarProvider>
 		</ColorModeContextProvider>

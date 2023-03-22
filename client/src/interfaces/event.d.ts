@@ -8,12 +8,12 @@ export interface FormFieldProp {
 export interface FormValues {
     title: string,
     description: string,
-    propertyType: string,
+    eventType: string,
     location: string,
     price: number | undefined,
 }
 
-export interface PropertyCardProps {
+export interface EventCardProps {
   id?: BaseKey | undefined,
   title: string,
   location: string,
