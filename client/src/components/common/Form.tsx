@@ -27,7 +27,7 @@ const Form = ({
 	return (
 		<Box>
 			<Typography fontSize={25} fontWeight={700} color={"#11142d"}>
-				{type} a Event
+				{type} an Event
 			</Typography>
 			<Box mt={2.5} borderRadius='15px' padding='20px' bgcolor={"#fcfcfc"}>
 				<form
@@ -49,7 +49,7 @@ const Form = ({
 								color: "#11142d",
 							}}
 						>
-							Enter Event Name
+							Event Name
 						</FormHelperText>
 						<TextField
 							fullWidth
@@ -69,7 +69,7 @@ const Form = ({
 								color: "#11142d",
 							}}
 						>
-							Enter Event Name
+							Description
 						</FormHelperText>
 						<TextareaAutosize
 							minRows={5}
@@ -98,7 +98,7 @@ const Form = ({
 									color: "#11142d",
 								}}
 							>
-								Select Event Type
+								Type
 							</FormHelperText>
 							<Select
 								variant='outlined'
@@ -128,7 +128,7 @@ const Form = ({
 									color: "#11142d",
 								}}
 							>
-								Enter Event Price
+								Price
 							</FormHelperText>
 							<TextField
 								fullWidth
@@ -168,9 +168,11 @@ const Form = ({
 								fontSize={16}
 								fontWeight={500}
 								my='10px'
+								marginBottom={0}
 							>
-								Event Photo
+								Event Poster
 							</Typography>
+							
 							<Button
 								component='label'
 								sx={{
@@ -192,6 +194,12 @@ const Form = ({
 								/>
 							</Button>
 						</Stack>
+						<Typography
+								color="#11142d"
+								fontSize={10}
+								marginTop={-2}>
+								Best size (800x600)
+							</Typography>
 						<Typography
 							fontSize={14}
 							color='#808191'

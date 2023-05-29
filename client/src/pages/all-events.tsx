@@ -18,7 +18,7 @@ const AllEvents = () => {
 		<Box>
 			<Stack direction='row' justifyContent='space-between' alignItems='center'>
 				<Typography fontSize={25} fontWeight={700} color={"#11142d"}>
-					All Properties
+					Events
 				</Typography>
 
 				<CustomButton
